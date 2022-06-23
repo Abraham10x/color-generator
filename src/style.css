@@ -63,3 +63,40 @@ button:hover {
   background: #556885;
   transition: background 0.34s;
 }
+
+main {
+  display: flex;
+}
+
+.color-bar {
+  width: 9.89rem;
+  background: #1f2937;
+}
+
+.color {
+  height: 38rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #d5d4d8;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+
+.color-one {
+  background: #f55a5a;
+}
+.color-two {
+  background: #2b283a;
+}
+.color-three {
+  background: #fbf3ab;
+}
+.color-four {
+  background: #aad1b6;
+}
+.color-five {
+  background: #a626d3;
+}
