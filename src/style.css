@@ -29,3 +29,37 @@ header {
   background: #1f2937;
   padding: 2rem 1.5rem;
 }
+
+input {
+  height: 3.6rem;
+  width: 5rem;
+}
+
+select {
+  font-family: "Inter", sans-serif;
+  background: #1f293a;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  text-align: left;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  margin: 0 1.5rem;
+  width: 25rem;
+  font-size: 1.6rem;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+  background: #3d4b60;
+  border-radius: 0.4rem;
+  border: 0;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.1rem;
+  text-transform: capitalize;
+}
+
+button:hover {
+  background: #556885;
+  transition: background 0.34s;
+}
