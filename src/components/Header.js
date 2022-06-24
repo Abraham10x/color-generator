@@ -16,6 +16,13 @@ function Header(){
             }
         })
     }
+    
+    
+    useEffect(()=>{
+        fetch(`https://www.thecolorapi.com/scheme?hex=${formData.color.substring(1)}&mode=${formData.colorScheme}`)
+        .then(response => response.json())
+        .then(data => console.log(data))
+    }, [formData])
 
     function submitData(){
         console.log(formData)
