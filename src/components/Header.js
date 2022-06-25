@@ -4,11 +4,12 @@ import Main from './Main'
 function Header(){
 
     const [formData, setFormData] = useState({
-        color: '',
-        colorScheme: ''
+        color: '#000000',
+        colorScheme: 'monochrome'
     })
 
     const [color, setColor] = useState([])
+    const [click, setClick] = useState(false)
 
     function handleChange(event){
         const {name, value} = event.target
@@ -26,17 +27,21 @@ function Header(){
         fetch(`https://www.thecolorapi.com/scheme?hex=${formData.color.substring(1)}&mode=${formData.colorScheme}`)
         .then(response => response.json())
         .then(data => setColor(data.colors))
-    }, [formData])
+    }, [click])
 
     function submitData(){
         console.log(formData)
-        colorBox = color.map(item => (
-            <Main
-                key={color.hex.value}
-                color={color.hex.value}
-            />
-        ))
+        console.log(color)
+        console.log(click)
+        setClick(state => !state)
     }
+
+    colorBox = color.map(item => (
+        <Main
+            key={item.hex.value}
+            color={item.hex.value}
+        />
+    ))
 
     return(
         <>
